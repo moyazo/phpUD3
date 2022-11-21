@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script defer src="../script.js"></script>
+    <script defer src="../js/bootstrap.bundle.js"></script>
+    <title>001post</title>
+</head>
+<body>
+
+    <div class="container-fluid w-25">
+        <form action="001server.php" method="post">
+            <section id="n">
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Name</label>
+                  <input type="text" class="form-control" name="name" id="nombre" aria-describedby="helpId" placeholder="">
+                </div>
+            </section>
+    
+            <section id="sn">
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Surname</label>
+                    <input type="text" class="form-control" name="surname" id="apellido" aria-describedby="helpId" placeholder="">
+                </div>
+            </section>
+    
+            <section id="y">
+                <div class="mb-3">
+                    <label for="año" class="form-label">Year</label>
+                    <input type="date" class="form-control" name="year" id="año" aria-describedby="helpId" placeholder="">
+                </div>
+            </section>
+    
+            <section id="e">
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" id="correo" aria-describedby="helpId" placeholder="">
+                </div>
+            </section>
+    
+            <section id="ps">
+                <div class="mb-3">
+                    <label for="ps" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" id="ps" aria-describedby="helpId" placeholder="">
+                </div>
+            </section>
+            <section id="sb">
+                <div class="mb-3">
+                    <input type="submit" class="form-control"  id="ps" aria-describedby="helpId" value="ENVIAR">
+                </div>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
