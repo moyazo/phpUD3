@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <script defer src="../script.js"></script>
-    <script defer src="../js/bootstrap.bundle.js"></script>
-    <title>002formulario</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <title>009formulario1</title>
 </head>
 <body>
     
     
 
 <div class="container-fluid w-25 d-flex align-items-center justify-content-center">
-    <form action="002formulario.php" method="get">
+    <form action="009formulario2.php" method="post">
         <section id="n">
             <div class="mb-3">
               <label for="nombre" class="form-label">Name</label>
@@ -57,58 +55,7 @@
                 
             
         </section>
-        <section id="con">
-            
-            <div class="container-fluid d-flex align-items-center justify-content-center">
-                <div class="mb-3">
-                  <label for="tamaño" class="form-label">Family Sizing</label>
-                  <input type="text"
-                    class="form-control" name="size" id="tamaño" aria-describedby="helpId" placeholder="">
-                </div>
-            </div>
-            
-        
-    </section>
-    <section id="fav">
-            
-        <div class="container-fluid d-flex flex-column align-items-center justify-content-center p-5">
-           <div class="form-check">
-             <input class="form-check-input" type="checkbox" value="HAMBURGESA" id="f" name="fav[]">
-             <label class="form-check-label" for="fav">
-                HAMBURGESA
-             </label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" type="checkbox" value="PIZZA" id="f" name="fav[]">
-             <label class="form-check-label" for="fav">
-                PIZZA
-             </label>
-           </div>
-           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="PASTA CARBONARA" id="f" name="fav[]">
-            <label class="form-check-label" for="fav">
-               PASTA CARBONARA
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="SOLOMILLO WISKY" id="f" name="fav[]">
-            <label class="form-check-label" for="f">
-               SOLOMILLO WISKY
-            </label>
-          </div>
-        </div>
-    </section>
-    <label for="color">ELIGE COLOR</label>
-                <select name="color">
-                    <option value="red">Rojo</option>
-                    <option value="yellow">Amarillo</option>
-                    <option value="green">Verde</option>
-                    <option value="blue">Azul</option>
-                    <option value="black">Negro</option>
-                    <option value="orange">Naranja</option>
-                    <option value="pink">Rosa</option>
-                </select>
-        <input type="submit" value="Cambiar Color">
+       
         <section id="sb">
             <div class="mb-3">
                 <input type="submit" class="form-control"  id="ps" aria-describedby="helpId" value="ENVIAR" name="submit">

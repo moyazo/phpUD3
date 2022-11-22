@@ -1,3 +1,8 @@
+
+<!-- No tengo ni idea de hacerlo -->
+
+
+
 <?php
   
   if(!empty($_FILES['archivo'])){

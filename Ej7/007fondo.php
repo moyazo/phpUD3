@@ -1,9 +1,9 @@
 <?php
 
-if(isset($_POST["color"])){
-    $color = $_POST["color"];
+if(isset($_POST["color"])){ // Controlamos si $_POST["color"] esta vacio
+    $color = $_POST["color"]; // Guardamos el color recibido por $_POST["color"]
     
-    setcookie("color",$color,time()+3600);
+    setcookie("color",$color,time()+3600); // creamos la COOKIE con setcookie()
     
 }else{
     
@@ -23,13 +23,13 @@ if(isset($_POST["color"])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <script defer src="../script.js"></script>
-    <script defer src="../js/bootstrap.bundle.js"></script>
-    <title>005subidaImagen</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <title>007fondo</title>
 </head>
-<body <?php echo "style= 'background-color: $color;'" ?>>
-    <div class="container-fluid w-25">
+<body <?php echo "style= 'background-color: $color;'" ?>> <!-- No se poner el estilo de otra forma -->
+
+<!-- Formulario para color -->
+<div class="container-fluid w-25">
             <form action="007fondo.php" method="post">
                 <label for="color">ELIGE COLOR</label>
                 <select name="color">

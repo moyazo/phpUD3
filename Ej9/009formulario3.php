@@ -1,29 +1,32 @@
 <?php 
 
-// DATOS RECIBIDOS por GET
+// DATOS RECIBIDOS por POST
 
-$name = $_GET["name"];  
-$surname = $_GET["surname"];
-$email = $_GET["email"];
-$url = $_GET["url"];
-$favorito = $_GET["fav"];
-$sexo = $_GET["sexo"];
+$size = $_POST["size"];
+$fav = $_POST["fav"];
 
-$size = $_GET["size"];
+session_start();
+$array = $_SESSION["form1"];
+
 ?>
-<!-- HTML con la tabla de los datos -->
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../bootstrap.css">
-    <title>002formulario</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script defer src="../script.js"></script>
+    <script defer src="../js/bootstrap.bundle.js"></script>
+    <title>009formulario3</title>
 </head>
 <body>
     
-    <!-- TABLA DE DATOS -->
+    
 
 <div class="table-responsive d-flex align-items-center justify-content-center">
     <table class="table table-striped-columns
@@ -41,29 +44,28 @@ $size = $_GET["size"];
                 <th>Familia(Size)</th>
                 <th>Sexo</th>
                 <th>Comida Favorita</th>
-               
             </tr>
             </thead>
             <tbody class="table-group-divider">
-                <tr class="table-primary" >
-                    <td scope="row"><?php echo $name; ?></td> <!-- Mostrarndo variables -->
-                    <td scope="row"><?php echo $surname; ?></td>
-                    <td scope="row"><?php echo $email; ?></td>
-                    <td scope="row"><?php echo $url; ?></td>
+            <tr class="table-primary" >
+                    <td scope="row"><?php echo $array[0]; ?></td>
+                    <td scope="row"><?php echo $array[1]; ?></td>
+                    <td scope="row"><?php echo $array[2]; ?></td>
+                    <td scope="row"><?php echo $array[3]; ?></td>
                     <td scope="row"><?php echo $size; ?></td>
                     <td scope="row">
                         <?php 
-                            foreach($sexo as $s){
+                                foreach($array[4] as $s)
                                     if(isset($s)){
-                                        echo "<br>" . $s . "<br>";  //Cuando la variable son varias, se guardan en un array y se muestra con un for each
+                                        echo "<br>" . $s . "<br>";
                                     }
-                            }
+                            
                         ?>
                     </td>
                     <td scope="row">
                         <?php 
-                            foreach($favorito as $fav){
-                                echo "<br>" . $fav ."<br>";
+                            foreach($fav as $favorito){
+                                echo "<br>" . $favorito ."<br>";
                             }
                         ?>
                     </td>
@@ -75,8 +77,6 @@ $size = $_GET["size"];
             </tfoot>
     </table>
 </div>
-        
 
 </body>
 </html>
-
