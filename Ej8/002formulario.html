@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <script defer src="../script.js"></script>
     <script defer src="../js/bootstrap.bundle.js"></script>
-    <title>003validacion</title>
+    <title>002formulario</title>
 </head>
 <body>
     
+    
+
 <div class="container-fluid w-25 d-flex align-items-center justify-content-center">
-    <form action="003validacion.php" method="get">
+    <form action="002formulario.php" method="get">
         <section id="n">
             <div class="mb-3">
               <label for="nombre" class="form-label">Name</label>
-              <input type="text" class="form-control" name="name" id="nombre" aria-describedby="helpId" placeholder="" required>
+              <input type="text" class="form-control" name="name" id="nombre" aria-describedby="helpId" placeholder="">
             </div>
         </section>
 
         <section id="sn">
             <div class="mb-3">
                 <label for="apellido" class="form-label">Surname</label>
-                <input type="text" class="form-control" name="surname" id="apellido" aria-describedby="helpId" placeholder="" required>
+                <input type="text" class="form-control" name="surname" id="apellido" aria-describedby="helpId" placeholder="">
             </div>
         </section>
 
@@ -31,14 +33,14 @@
         <section id="e">
             <div class="mb-3">
                 <label for="correo" class="form-label">Email</label>
-                <input type="email" class="form-control" name="email" id="correo" aria-describedby="helpId" placeholder="" required>
+                <input type="email" class="form-control" name="email" id="correo" aria-describedby="helpId" placeholder="">
             </div>
         </section>
 
         <section id="url">
             <div class="mb-3">
                 <label for="web" class="form-label">Web Url</label>
-                <input type="url" class="form-control" name="url" id="web" aria-describedby="helpId" placeholder="" required>
+                <input type="url" class="form-control" name="url" id="web" aria-describedby="helpId" placeholder="">
             </div>
         </section>
 
@@ -46,7 +48,7 @@
             
                 <div class="container-fluid d-flex align-items-center justify-content-center">
                     <label for="sexo" class="form-label">MASCULINO</label>
-                    <input type="radio" class="form-check-input m-4" name="sexo[]" id="sexo1" aria-describedby="helpId" value="MASCULINO" >
+                    <input type="radio" class="form-check-input m-4" name="sexo[]" id="sexo1" aria-describedby="helpId" value="MASCULINO">
                     <label for="sexo" class="form-label">FEMENINO</label>
                     <input type="radio" class="form-check-input m-4" name="sexo[]" id="sexo2" aria-describedby="helpId" value="FEMENINO">
                     <label for="sexo" class="form-label">OTRO</label>
@@ -95,9 +97,18 @@
             </label>
           </div>
         </div>
-        
-    
     </section>
+    <label for="color">ELIGE COLOR</label>
+                <select name="color">
+                    <option value="red">Rojo</option>
+                    <option value="yellow">Amarillo</option>
+                    <option value="green">Verde</option>
+                    <option value="blue">Azul</option>
+                    <option value="black">Negro</option>
+                    <option value="orange">Naranja</option>
+                    <option value="pink">Rosa</option>
+                </select>
+        <input type="submit" value="Cambiar Color">
         <section id="sb">
             <div class="mb-3">
                 <input type="submit" class="form-control"  id="ps" aria-describedby="helpId" value="ENVIAR" name="submit">
